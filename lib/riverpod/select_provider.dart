@@ -22,12 +22,12 @@ class SelectNotifier extends StateNotifier<ShoppingItemModel> {
 //   final ts = TextStyle(fontSize: 20, fontWeight: FontWeight.w500);
 //
 //   state = ShoppingItemModel(
-//       name: state.name,
+//       name: state.name
 //       quantity: state.quantity,
 //       hasBought: state.hasBought,
 //       isSpicy: state.isSpicy);
 // }
-// 이렇게 반복하게 되면 불편  그래서 copyWith 함수를 모델에 만들어두고
+// 모델중 하나를 수정할때 이렇게 반복하게 되면 불편  그래서 copyWith 함수를 모델에 만들어두고
   toggleHasBought() {
     state = state.copyWith(hasBought: !state.hasBought);
   }
